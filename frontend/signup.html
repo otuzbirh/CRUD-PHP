@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+
+        body {
+            background-color: rgb(240, 191, 143);
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbkkHkjJkud17dl-_qktG1HtG3LzL2uY3cK6jm6mqavwvfrd4xXMR9537Z5HQ-YIZNN6c&usqp=CAU);
+            background-size: cover;
+            background-repeat: no-repeat;
+           
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 25px;
+            color: orange;
+        }
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        form {
+         
+            width: 30vw;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        input {
+            border-radius: 15px;
+            margin: 5px;
+            height: 4vh;
+        }
+
+        label {
+            color: rgb(250, 223, 223);
+        }
+
+        #btn {
+            height: 5vh;  
+            background-color: orange;
+        }
+
+        #btn:hover {
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Signup form</h1>
+    <form onsubmit="return false;" method="POST">
+        <div>
+            <label for="">First Name</label>
+            <input type="text" name="fName">
+        </div>
+        <div>
+            <label for="">Last Name</label>
+            <input type="text" name="lName">
+        </div>
+        <div>
+            <label for="">User name</label>
+            <input type="text" name="userName">
+        </div>
+        <div>
+            <label for="">Email</label>
+            <input type="text" name="email">
+        </div>
+        <div>
+            <label for="">Password</label>
+            <input type="password" name="pwd">
+        </div>
+        <div>
+            <label for="">Repeat Password</label>
+            <input type="password" name="rPwd">
+        </div>
+        <div>
+
+            <input type="hidden" name="crud_req" value="signup">
+        </div> <br>
+        <div>
+
+            <input id="btn" type="submit" value="Register">
+        </div>
+    </form>
+    <script src="signup.js" defer></script>
+
+</body>
+
+</html>

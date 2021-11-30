@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+
+        body {
+    background-color: rgb(42, 14, 65);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 25px;
+            color: white;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+          
+        }
+
+        /* .forma {
+            width: 80vh;
+            height: auto;
+            background-color: rgb(223, 215, 215);
+            opacity: 0.5;
+        } */
+
+        form {
+            width: 30vw;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+
+        input {
+            height: 5vh;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        label {
+            color: white;
+        }
+
+        input[type="submit" i]:hover {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login form</h1>
+
+    <div class="forma">
+    <form onsubmit="return false;" method="POST">
+
+        <div>
+            <label for="">User name</label>
+            <input type="text" name="userName">
+        </div>
+
+        <div>
+            <label for="">Password</label>
+            <input type="password" name="pwd">
+        </div>
+
+        <div>
+
+            <input type="hidden" name="crud_req" value="login">
+        </div> <br>
+        <div>
+
+            <input type="submit" value="Login">
+        </div>
+    </form>
+
+</div>
+    <script src="login.js" defer></script>
+
+</body>
+
+</html>
